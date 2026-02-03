@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Arjun V | DevOps • Cloud • IoT Engineer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta name="description" content="Portfolio of Arjun V – DevOps, Cloud and IoT Engineer. Projects, internships, certifications, and research." />
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; margin: 0; line-height: 1.6; color: #111; }
+    header { padding: 40px 20px; background: #0f172a; color: #fff; text-align: center; }
+    header h1 { margin-bottom: 10px; }
+    header p { max-width: 700px; margin: auto; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { border-bottom: 2px solid #e5e7eb; padding-bottom: 6px; margin-bottom: 20px; }
+    .skills, .projects, .experience { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+    .card { border: 1px solid #e5e7eb; border-radius: 8px; padding: 16px; background: #fff; }
+    footer { background: #0f172a; color: #fff; text-align: center; padding: 20px; }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .reveal { opacity: 0; transform: translateY(16px); transition: all 0.6s ease; }
+    .reveal.active { opacity: 1; transform: translateY(0); }
+
+    /* =======================================================
+       RESPONSIVE ADD-ON (NO EXISTING CODE MODIFIED)
+       ======================================================= */
+
+    /* Prevent horizontal overflow on small devices */
+    body {
+      overflow-x: hidden;
+    }
+
+    /* Tablet adjustments */
+    @media (max-width: 900px) {
+      header {
+        padding: 32px 16px;
+      }
+
+      section {
+        padding: 32px 16px;
+      }
+
+      header p {
+        font-size: 0.95rem;
+      }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.6rem;
+      }
+
+      header h3 {
+        font-size: 1rem;
+      }
+
+      header p {
+        font-size: 0.9rem;
+      }
+
+      /* Force single-column layout for all grids */
+      .skills,
+      .projects,
+      .experience {
+        grid-template-columns: 1fr;
+      }
+
+      .card {
+        padding: 14px;
+      }
+
+      footer {
+        font-size: 0.85rem;
+      }
+    }
+.card {
+  position: relative;
+}
+
+.linkedin-link {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  font-size: 22px;
+  color: #0A66C2;
+}
+
+.linkedin-link:hover {
+  color: #004182;
+}
+
+/* Top-right navbar */
+.navbar {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 0.95rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+  .navbar {
+    top: 15px;
+    right: 15px;
+    gap: 10px;
+  }
+  .navbar a {
+    font-size: 0.9rem;
+    padding: 5px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    position: static;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+  </style>
+</head>
+<body>
+<header>
+  <h1>Arjun V</h1>
+  <h3>DevOps • Cloud • IoT Engineer (Fresher)</h3>
+  <p>ECE undergraduate passionate about building real-world systems using IoT, cloud infrastructure, and Linux-based automation.</p>
+
+  <!-- NAVBAR ADDED -->
+  <div class="navbar">
+    <a href="https://github.com/Arjxn404" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/arjun2005" target="_blank">LinkedIn</a>
+    <a href="C:\Users\ARJUN V\Downloads\portfolio updated\Arjun_Resume_ATS.pdf" download="ArjunV_Resume.pdf">Resume</a>
+    <a href="mailto:arjunvasanthakumar2005@gmail.com">Contact</a>
+    <a href="https://leetcode.com/u/Arjunvasanthakumar/" target="_blank">LeetCode</a>
+  </div>
+</header>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const reveals = document.querySelectorAll('.reveal');
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(e => e.isIntersecting && e.target.classList.add('active'));
+    }, { threshold: 0.12 });
+    reveals.forEach(r => io.observe(r));
+  });
+</script>
+
+<section class="reveal">
+  <h2>Skills</h2>
+  <div class="skills">
+    <div class="card"><strong>Cloud & DevOps</strong><br/>AWS (EC2, S3, IAM, Lambda), Linux, Docker, Git, GitHub</div>
+    <div class="card"><strong>IoT & Embedded</strong><br/>Arduino, ESP8266, Raspberry Pi, MQTT, BLE, RFID</div>
+    <div class="card"><strong>Programming</strong><br/>Python, Java, HTML, CSS, SQL</div>
+  </div>
+</section>
+
+
+<section class="reveal">
+  <h2>Freelance Projects</h2>
+<div class="projects">
+
+  <div class="card">
+    <strong>Smart Cattle Feeder System</strong>
+    <p>
+      Automated livestock feeding system using Arduino, RTC, servo motors, and pumps.
+      Designed for rural automation with future IoT cloud integration.
+    </p>
+    <a 
+      href="https://www.linkedin.com/posts/arjun2005_iot-automation-smartfarming-activity-7312333782944993280-QtnQ"
+      target="_blank"
+      class="linkedin-link"
+      aria-label="View LinkedIn Post"
+    >
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+
+  <div class="card">
+    <strong>POS System for Hypermarket</strong>
+    <p>Deployed POS solution for inventory, billing, and transaction management.</p>
+    <a
+      href="https://www.linkedin.com/posts/arjun2005_online-internshipexperience-webdevelopment-activity-7363351516553863168-2KvX"
+      target="_blank"
+      class="linkedin-link"
+      aria-label="View LinkedIn Post"
+    >
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+
+  <div class="card">
+    <strong>Jewellery Management Web App</strong>
+    <p>Web-based order and inventory tracking system for a real retail business.</p>
+    <a
+      href="https://www.linkedin.com/posts/arjun2005_hello-connections-why-i-built-this-web-activity-7370099250774409216-IXDX"
+      target="_blank"
+      class="linkedin-link"
+      aria-label="View LinkedIn Post"
+    >
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+
+</div>
+
+
+<section class="reveal">
+  <h2>Project Deep Dive</h2>
+  <div class="card">
+    <strong>Smart Cattle Feeder System — System Architecture</strong>
+    <ul>
+      <li><strong>Edge Layer:</strong> Arduino for scheduling, sensing, and actuation</li>
+      <li><strong>Connectivity:</strong> MQTT-based design for scalable communication</li>
+      <li><strong>Cloud Layer (Planned):</strong> AWS IoT Core for telemetry and alerts</li>
+      <li><strong>Outcome:</strong> Reliable rural automation with cloud extensibility</li>
+    </ul>
+    <p><em>Design philosophy:</em> Reliability first, cloud next.</p>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Internships</h2>
+  <div class="experience">
+    <div class="card"><strong>IoT & PCB Design Intern</strong><br/>KPR Institute of Engineering and Technology (Jan 2025)</div>
+    <div class="card"><strong>AI Intern</strong><br/>KRISHTEC (Jun–Jul 2025)</div>
+    <div class="card"><strong>Web Development Intern</strong><br/>Applifiles (Jun–Jul 2025)</div>
+    <div class="card"><strong>Full Stack Intern</strong><br/>Apophis (Jun–Jul 2025)</div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section class="reveal">
+  <h2>Education</h2>
+  <div class="card">
+    <h3>B.E. Electronics and Communication Engineering</h3>
+    <p><strong>KPR Institute of Engineering and Technology</strong></p>
+    <p>Expected Graduation: <strong>May 2027</strong></p>
+    <p>CGPA: <strong>7.99 / 10</strong></p>
+    <ul>
+      <li>Strong foundation in Networking, and Digital Electronics</li>
+      <li>Hands-on academic projects aligned with IoT and Cloud platforms</li>
+      <li>Active involvement in hackathons, research, and industry programs</li>
+    </ul>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="reveal">
+  <h2>Certifications</h2>
+  <div class="skills">
+    <div class="card">
+      <strong>AWS Cloud Practitioner Essentials</strong>
+      <p>Cloud fundamentals, IAM, EC2, S3, pricing, and shared responsibility model</p>
+    </div>
+    <div class="card">
+      <strong>Docker for Beginners – KodeKloud</strong>
+      <p>Containers, images, Dockerfiles, and DevOps workflows</p>
+    </div>
+    <div class="card">
+      <strong>Linux Unhatched – Cisco NDG</strong>
+      <p>Linux CLI, file systems, permissions, and system basics</p>
+    </div>
+    <div class="card">
+      <strong>NPTEL – Industry 4.0 & Industrial IoT</strong>
+      <p>Smart manufacturing, IIoT architecture, cyber-physical systems</p>
+    </div>
+  </div>
+</section>
+
+<section class="reveal">
+  <h2>Publications & Achievements</h2>
+  <ul>
+    <li>Research paper at EAI BDCC 2025: <em>LoRaWAN-Based Smart Monitoring and Alert System for Mining Safety</em></li>
+    <li>DecodeX 2025 : Encrypted. Classified. Unlocked - BMSITM Bangalore.</li>
+    <li>IEEE Xtreme 18.0 – 24 Hour Global Hackathon Participant</li>
+  </ul>
+</section>
+
+<section class="reveal">
+  <h2>Get In Touch</h2>
+  <div class="card" style="text-align:center;">
+    <p>I’m actively seeking <strong>DevOps, Cloud, and IoT internship / fresher opportunities</strong>.</p>
+    <p>
+      <a href="mailto:arjunvasanthakumar2005@gmail.com"><strong>Email</strong></a> | 
+      <a href="https://www.linkedin.com/in/arjun2005"><strong>LinkedIn</strong></a> | 
+      <a href="C:\Users\ARJUN V\Downloads\portfolio updated\Arjun_Resume_ATS.pdf"><strong>Resume (PDF)</strong></a>
+    </p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Arjun V</p>
+</footer>
+
+</body>
+</html>
